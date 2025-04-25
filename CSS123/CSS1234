@@ -1,0 +1,174 @@
+🎨 2. CSS (Cascading Style Sheets) — A Decoração da Casa
+Se o HTML é a estrutura, o CSS é a pintura, decoração e estilo da casa. Ele dá cores, formas, tamanhos, posições.
+
+Exemplo:
+css
+Copiar
+Editar
+body {
+  background-color: #f0f0f0;
+  font-family: Arial;
+}
+
+h1 {
+  color: green;
+}
+Você pode aplicar o CSS de três formas:
+
+Inline (dentro do HTML)
+
+Interno (em uma tag <style>)
+
+Externo (arquivo separado: style.css)
+
+🖌️ Propriedades comuns:
+
+Propriedade	O que faz
+color	Cor do texto
+background-color	Cor de fundo
+font-size	Tamanho da fonte
+margin / padding	Espaços externos / internos
+text-align	Alinhamento do texto
+border	Borda
+display	Tipo de exibição (bloco, flex etc)
+
+
+
+
+
+
+
+🧠 Como usar CSS
+Você pode aplicar o CSS de 3 formas:
+
+Inline (dentro da tag):
+
+<p style="color: red;">Texto vermelho</p>
+
+Interno (no próprio HTML):
+
+<head>
+  <style>
+    p { color: red; }
+  </style>
+</head>
+
+
+Externo (arquivo separado .css):
+No HTML:
+
+<link rel="stylesheet" href="style.css">
+
+
+
+No arquivo style.css:
+
+p {
+  color: red;
+}
+
+
+📦 Estrutura de uma Regra CSS
+
+seletor {
+  propriedade: valor;
+}
+
+
+
+Exemplo:
+
+css
+Copiar
+Editar
+h1 {
+  color: blue;
+  font-size: 32px;
+}
+
+
+
+
+🎯 Seletores Comuns
+
+Seletor	O que seleciona	Exemplo
+
+*	Todos os elementos	* {margin: 0;}
+
+tag	Todos os elementos daquela tag	p {}
+
+.classe	Elementos com aquela classe	.destaque {}
+
+#id	Elemento com aquele ID	#cabecalho {}
+
+tag tag	Um dentro do outro (descendente)	div p {}
+
+tag, tag	Seleciona múltiplos tipos	h1, h2 {}
+
+🎨 Propriedades Mais Usadas
+
+📏 Tamanho e Espaçamento
+
+Propriedade	Exemplo
+width	width: 300px;
+height	height: 100px;
+margin	margin: 20px;
+padding	padding: 10px;
+border	border: 1px solid black;
+
+
+
+💬 Texto
+
+Propriedade	Exemplo
+color	color: red;
+font-size	font-size: 20px;
+text-align	text-align: center;
+font-family	font-family: Arial, sans-serif;
+font-weight	font-weight: bold;
+text-decoration	text-decoration: underline;
+
+
+
+🎨 Fundo
+
+Propriedade	Exemplo
+background-color	background-color: lightblue;
+background-image	background-image: url('img.jpg');
+background-size	background-size: cover;
+
+
+🔳 Box Model
+
+Tudo em HTML é uma caixa, com:
+margin (fora), border, padding (dentro), e o conteúdo.
+
+🧱 Display & Position
+
+Propriedade	Exemplo
+display	block, inline, flex, grid, none
+position	static, relative, absolute, fixed
+top, left	top: 10px; (usado com position)
+
+
+
+🧰 Flexbox (muito usado)
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+justify-content: Alinha horizontalmente.
+
+align-items: Alinha verticalmente.
+
+
+
+✨ Outros legais
+
+Propriedade	Exemplo
+box-shadow	box-shadow: 2px 2px 10px gray;
+border-radius	border-radius: 10px;
+transition	transition: 0.3s;
+opacity	opacity: 0.8;

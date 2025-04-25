@@ -1,0 +1,162 @@
+🧱 1. HTML (HyperText Markup Language) — A Estrutura da Casa
+Pensa no HTML como a estrutura de uma casa: paredes, portas, janelas, teto. Ele organiza tudo o que aparece na tela.
+
+Exemplo:
+html
+Copiar
+Editar
+<h1>Bem-vindo à minha página!</h1>
+<p>Esse é um parágrafo de texto.</p>
+<img src="foto.jpg" alt="Minha foto">
+Principais elementos:
+<h1> até <h6> → títulos
+
+<p> → parágrafos
+
+<img> → imagens
+
+<a href="link"> → links
+
+<div> e <section> → blocos de organização
+
+    🧱 Tags mais usadas:
+
+Tag	Função
+<h1> a <h6>	Títulos (h1 é o maior)
+<p>	Parágrafo de texto
+<a>	Link
+<img>	Imagem
+<ul> / <ol>	Lista (não ordenada / ordenada)
+<li>	Item da lista
+<div>	Bloco genérico
+<span>	Texto em linha (inline)
+<form>	Formulário
+
+
+
+
+
+
+    ✏️ Explicação:
+<!DOCTYPE html>: diz que o documento é HTML5.
+
+<html>: envolve todo o conteúdo HTML.
+
+<head>: parte invisível da página (meta-informações, título, links de estilo).
+
+<title>: nome que aparece na aba do navegador.
+
+<body>: parte visível da página (o que o usuário vê).
+
+
+
+
+
+🔠 Principais tags de HTML
+
+Tag	O que faz
+<h1> a <h6>	Títulos, sendo <h1> o mais importante
+<p>	Parágrafos
+<a href="">	Links (âncoras)
+<img src="">	Imagens
+<ul> / <ol> / <li>	Listas não ordenadas, ordenadas, e itens
+<strong> / <em>	Negrito e itálico (semântico)
+<br>	Quebra de linha
+<div>	Contêiner genérico (caixa)
+<span>	Texto em linha (sem alterar layout)
+<form>	Formulário
+<input>	Campo de entrada
+<button>	Botão
+
+
+
+
+
+🎯 Exemplo simples de HTML:
+
+<h1>Meu Site</h1>
+<p>Bem-vindo ao meu site incrível.</p>
+<a href="https://www.exemplo.com">Clique aqui</a>
+
+
+
+🔤 Tags de Texto
+
+Tag	Função	Exemplo
+<h1> a <h6>	Títulos (h1 = maior)	<h2>Subtítulo</h2>
+<p>	Parágrafo	<p>Esse é um parágrafo</p>
+<br>	Quebra de linha	Texto<br>Nova linha
+<hr>	Linha horizontal	<hr>
+<strong>	Negrito com significado (ênfase)	<strong>Importante</strong>
+<b>	Negrito visual (sem significado)	<b>Negrito</b>
+<em>	Itálico com ênfase	<em>Ênfase</em>
+<i>	Itálico visual	<i>Itálico</i>
+<blockquote>	Citação longa	<blockquote>Citação</blockquote>
+<code>	Código em linha	<code>console.log("oi")</code>
+<pre>	Texto pré-formatado (mantém espaços e quebras)	<pre>Texto formatado</pre>
+
+
+
+
+
+📋 Listas
+
+Tag	Função	Exemplo
+<ul>	Lista não ordenada (bolinhas)	<ul><li>Item</li></ul>
+<ol>	Lista ordenada (números)	<ol><li>Item</li></ol>
+<li>	Item da lista	<li>Item</li>
+<dl>	Lista de definição	<dl><dt>HTML</dt><dd>Linguagem de marcação</dd></dl>
+<dt>	Termo a ser definido	
+<dd>	Definição do termo	
+
+
+
+
+
+🖼️ Multimídia
+
+Tag	Função	Exemplo
+<img>	Imagem	<img src="foto.jpg" alt="Descrição">
+<audio>	Áudio	<audio controls src="som.mp3"></audio>
+<video>	Vídeo	<video controls><source src="video.mp4"></video>
+<figure>	Figura com legenda	<figure><img src="foto.jpg"><figcaption>Legenda</figcaption></figure>
+
+
+
+
+
+📎 Links e Navegação
+
+Tag	Função	Exemplo
+<a>	Link (âncora)	<a href="https://site.com">Visite</a>
+target="_blank"	Abre em nova aba	<a href="..." target="_blank">Link</a>
+<nav>	Agrupamento de links de navegação	<nav><a href="#">Home</a></nav>
+
+
+
+
+
+📦 Organização de layout
+
+Tag	Função	Exemplo
+<div>	Divisão genérica	<div>Conteúdo</div>
+<span>	Container em linha	<span>Texto</span>
+<header>	Cabeçalho	<header>Topo do site</header>
+<footer>	Rodapé	<footer>Fim do site</footer>
+<main>	Conteúdo principal	<main>Conteúdo</main>
+<section>	Seção de conteúdo	<section>Parte</section>
+<article>	Conteúdo independente (ex: post)	<article>Notícia</article>
+<aside>	Conteúdo lateral (ex: propaganda)	<aside>Anúncio</aside>
+
+
+
+
+📥 Formulários
+
+Tag	Função	Exemplo
+<form>	Cria formulário	<form>...</form>
+<input>	Campo de entrada	<input type="text">
+<label>	Rótulo para input	<label for="nome">Nome</label>
+<textarea>	Área de texto maior	<textarea></textarea>
+<select>	Menu suspenso	<select><option>Opção</option></select>
+<button>	Botão	<button>Enviar</button>

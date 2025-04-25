@@ -1,0 +1,270 @@
+⚙️ 3. JavaScript — A Automação da Casa
+Já pensou numa casa inteligente? A luz acende sozinha, o portão abre com sensor... Isso é o que o JavaScript faz no site: ele dá vida e interatividade.
+
+Exemplo:
+html
+Copiar
+Editar
+<button onclick="mostrarMensagem()">Clique aqui</button>
+
+<script>
+  function mostrarMensagem() {
+    alert("Você clicou no botão!");
+  }
+</script>
+Com JavaScript, você pode:
+
+Criar botões que fazem algo
+
+Mostrar mensagens
+
+Criar sliders, jogos, animações
+
+Buscar dados de APIs, formulários...
+
+JavaScript adiciona movimento e comportamento. Ele responde a ações do usuário (clicar, digitar, mover o mouse, etc.).
+
+
+
+
+💡 Exemplo básico:
+html
+Copiar
+Editar
+
+
+
+<button onclick="mostrar()">Clique aqui</button>
+
+<script>
+  function mostrar() {
+    alert("Você clicou!");
+  }
+</script>
+
+
+
+🔧 O que dá pra fazer com JS:
+Validar formulários
+
+Criar sliders de imagem
+
+Trocar conteúdo ao clicar
+
+Pegar dados de APIs (como clima, futebol, etc.)
+
+Fazer animações
+
+Jogos simples
+
+
+1. ✅ Variáveis
+São como caixas que guardam valores.
+
+js
+Copiar
+Editar
+
+let nome = "Luiz";
+let idade = 20;
+const PI = 3.14;
+
+
+2. ✅ Tipos de dados
+
+String: "texto"
+
+Number: 42
+
+Boolean: true ou false
+
+Array: [1, 2, 3]
+
+Object: {nome: "Luiz", idade: 20}
+
+
+
+3. ✅ Funções
+Funções são blocos de código que executam uma ação.
+
+js
+Copiar
+Editar
+function saudacao() {
+  console.log("Olá, Luiz!");
+}
+
+saudacao(); // Chama a função
+
+
+4. ✅ Condições
+Pra tomar decisões, tipo "se isso, então aquilo".
+
+js
+Copiar
+Editar
+let idade = 18;
+
+if (idade >= 18) {
+  console.log("Você é maior de idade.");
+} else {
+  console.log("Você é menor de idade.");
+}
+
+
+5. ✅ Laços de repetição (loop)
+Pra repetir algo várias vezes.
+
+js
+Copiar
+Editar
+for (let i = 0; i < 5; i++) {
+  console.log("Contando: " + i);
+}
+
+
+
+6. ✅ Eventos (muito importante!)
+Quando o usuário clica, digita, passa o mouse, etc.
+
+html
+Copiar
+Editar
+<button onclick="mostrarMensagem()">Clique aqui</button>
+
+<script>
+  function mostrarMensagem() {
+    alert("Você clicou no botão!");
+  }
+</script>
+
+
+
+7. ✅ Manipular o HTML com JS (DOM)
+DOM = Document Object Model
+É como se o JS "pegasse na mão" do HTML.
+
+html
+Copiar
+Editar
+<p id="texto">Texto original</p>
+<button onclick="mudarTexto()">Mudar</button>
+
+<script>
+  function mudarTexto() {
+    document.getElementById("texto").innerText = "Texto alterado!";
+  }
+</script>
+
+
+
+
+8. ✅ Trabalhar com formulário
+html
+Copiar
+Editar
+<input type="text" id="nome">
+<button onclick="mostrarNome()">Mostrar Nome</button>
+
+<script>
+  function mostrarNome() {
+    let nome = document.getElementById("nome").value;
+    alert("Seu nome é " + nome);
+  }
+</script>
+
+
+🛠️ Como testar JS?
+Você pode usar um arquivo .html com <script> embutido
+
+Pode usar editors online como JSFiddle, CodePen ou PlayCode
+
+Ou usar seu próprio editor como VS Code
+
+Quer ir pro próximo nível?
+Podemos explorar:
+
+Arrays e objetos em profundidade
+
+Funções anônimas e arrow functions
+
+Eventos avançados
+
+Classes e orientação a objetos
+
+Promises e async/await
+
+APIs (ex: clima, futebol, etc.)
+
+
+
+-----------CONDICOES-------------------
+
+
+📌 O que são condições?
+São estruturas que fazem o código tomar decisões, como:
+
+"Se chover, pegue o guarda-chuva. Senão, vá de boa."
+
+No JavaScript, isso se faz com:
+
+if
+
+else if
+
+else
+
+Operador ternário (? :)
+
+switch (pra muitos casos diferentes)
+
+
+
+❔ Operador Ternário
+É tipo um if simplificado. Ideal pra decisões curtas.
+
+
+let autorizado = idade >= 18 ? "Pode entrar" : "Não pode entrar";
+console.log(autorizado);
+
+
+
+
+🔄 Switch (para várias opções)
+javascript
+Copiar
+Editar
+let cor = "azul";
+
+switch (cor) {
+  case "vermelho":
+    console.log("Cor quente");
+    break;
+  case "azul":
+    console.log("Cor fria");
+    break;
+  case "amarelo":
+    console.log("Cor vibrante");
+    break;
+  default:
+    console.log("Cor não identificada");
+}
+
+⚠️ O break evita que os outros casos sejam executados após encontrar o certo.
+
+
+
+
+
+
+🧪 Operadores de comparação mais usados:
+
+Operador	Significado
+==	Igual (com conversão de tipo)
+===	Igual e mesmo tipo
+!=	Diferente
+!==	Diferente e tipo diferente
+>	Maior
+<	Menor
+>=	Maior ou igual
+<=	Menor ou igual
